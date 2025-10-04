@@ -50,7 +50,7 @@ const UserSchema: Schema<User> = new Schema({
     type: String,
     required: [true, "Password is required!"],
     minLength: 6,
-    maxLength: 40,
+    maxLength: 30,
     match: [
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&^#()[\]{}<>,.~+=_\-|:;"'`/\\])[A-Za-z\d@$!%*?&^#()[\]{}<>,.~+=_\-|:;"'`/\\]{8,64}$/,
       "Password must be 8–64 characters long, include uppercase, lowercase, number, and special character",
