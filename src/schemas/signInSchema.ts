@@ -4,7 +4,7 @@ export const signInSchema = z.object({
   identifier: z
     .string()
     .trim()
-    .min(3, "Please enter your username or email.")
+    .min(5, "Please enter your username or email.")
     .max(254, "Identifier is too long."),
   password: z
     .string()
